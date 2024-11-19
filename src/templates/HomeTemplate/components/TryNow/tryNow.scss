@@ -1,0 +1,41 @@
+.try_now {
+  .try_now_content {
+    background-color: #e8faf4;
+    padding: 56px 80px 32px 80px;
+    border-radius: 16px;
+    .content_both {
+      display: flex;
+      align-items: center;
+      .content_left {
+        h2 {
+          margin: 32px 0;
+          font-size: 48px;
+          line-height: 1.2;
+          span {
+            color: #1dbf73;
+          }
+        }
+        .content_left_group {
+          .content_left_item {
+            .item {
+              h6 {
+                font-weight: bold;
+                font-size: 18px;
+              }
+              p {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        button {
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+      .content_right {
+      }
+    }
+  }
+}

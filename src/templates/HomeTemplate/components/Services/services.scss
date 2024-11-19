@@ -1,0 +1,17 @@
+.services {
+  padding: 40px 0;
+  h2 {
+  }
+  .services_group {
+    .services_item {
+      &:hover {
+        opacity: 0.88;
+        cursor: pointer;
+      }
+      h3 {
+      }
+      img {
+      }
+    }
+  }
+}
