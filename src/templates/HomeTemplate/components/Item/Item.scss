@@ -1,0 +1,34 @@
+.item {
+  .item_group {
+    display: flex;
+    justify-content: space-evenly;
+    .item_wrapper {
+      width: 130px;
+
+      .item_detail {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 16px 12px;
+        border-radius: 12px;
+        height: 130px;
+        transition: all 1.5s;
+
+        &:hover {
+          //   background-color: #1dbf73;
+          background: radial-gradient(
+            circle,
+            #1dbf73 30%,
+            white // rgba(29, 191, 115, 0) 100%
+          );
+          cursor: pointer;
+        }
+        p {
+          font-weight: bold;
+          margin-top: 20px;
+        }
+        img {
+          width: 30%;
+        }
+      }
+    }
+  }
+}

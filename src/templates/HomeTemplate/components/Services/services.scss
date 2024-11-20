@@ -3,14 +3,22 @@
   h2 {
   }
   .services_group {
-    .services_item {
-      &:hover {
-        opacity: 0.88;
-        cursor: pointer;
-      }
-      h3 {
-      }
-      img {
+    .service_group_item {
+      padding: 0 6px;
+      margin: 12px 4px;
+      .services_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 300px;
+        &:hover {
+          opacity: 0.88;
+          cursor: pointer;
+        }
+        h3 {
+        }
+        img {
+        }
       }
     }
   }
