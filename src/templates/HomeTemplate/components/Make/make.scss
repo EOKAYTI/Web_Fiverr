@@ -1,0 +1,34 @@
+.make {
+  .make_content {
+    padding: 40px 0;
+    h3 {
+      font-size: 40px;
+      margin-bottom: 64px;
+    }
+    .make_group {
+      display: flex;
+      margin-bottom: 64px;
+      .make_item {
+        margin-right: 100px;
+        img {
+        }
+        p {
+        }
+      }
+    }
+    .make_button {
+      text-align: center;
+      button {
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+        margin-top: 20px;
+        font-weight: bold;
+        &:hover {
+          background-color: #404145;
+        }
+      }
+    }
+  }
+}

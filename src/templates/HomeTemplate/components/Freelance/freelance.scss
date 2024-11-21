@@ -1,0 +1,30 @@
+.freelance {
+  padding: 40px 0;
+  .freelance_content {
+    background-color: #4d1727;
+    border-radius: 12px;
+    padding: 48px 0;
+    text-align: center;
+    height: 260px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3 {
+      font-size: 64px;
+      color: white;
+    }
+    .freelance_btn {
+      button {
+        background-color: white;
+        color: black;
+        border-radius: 12px;
+        padding: 10px 20px;
+        font-weight: bold;
+        &:hover {
+          background-color: #f6f6ff;
+        }
+      }
+    }
+  }
+}
