@@ -1,0 +1,43 @@
+.logo {
+  padding: 40px 0;
+  .logo_both {
+    background-color: #fff6f2;
+    border-radius: 12px;
+    display: flex;
+    .logo_content {
+      padding: 56px 80px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      svg {
+      }
+      h2 {
+        font-size: 48px;
+      }
+      p {
+        font-size: 20px;
+      }
+      .logo_btn {
+        button {
+          background-color: black;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 12px;
+
+          &:hover {
+            background-color: #404145;
+          }
+        }
+      }
+    }
+    .logo_img {
+      width: 50%;
+      padding: 48px 80px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

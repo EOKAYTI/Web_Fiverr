@@ -1,0 +1,37 @@
+.goto {
+  padding-bottom: 40px;
+  .goto_content {
+    h3 {
+      font-size: 28px;
+      margin-bottom: 32px;
+    }
+    .goto_group {
+      .goto_item {
+        padding: 20px 16px 16px 16px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 12px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        height: 200px;
+
+        &:hover {
+          box-shadow: 0 0.08px 2.55728px rgba(0, 0, 0, 0.053),
+            0 1.28px 5.57858px rgba(0, 0, 0, 0.077),
+            0 3px 10px rgba(0, 0, 0, 0.13);
+          cursor: pointer;
+        }
+
+        img {
+        }
+        p {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
