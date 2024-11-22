@@ -28,7 +28,7 @@ const Logo = () => {
               </g>
             </svg>
             <h2>
-              Make an incredible logo in <span>seconds</span>
+              Make an incredible logo <span>in seconds</span>
             </h2>
             <p>Pre-designed by top talent. Just add your touch.</p>
             <div className="logo_btn">

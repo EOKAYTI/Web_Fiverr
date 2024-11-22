@@ -104,7 +104,7 @@ const TryNow = () => {
                   </div>
                 </div>
               </div>
-              <button className="mt-8 bg-black px-5 py-[10px] text-white rounded-lg">
+              <button className="mt-8 bg-black px-5 py-[10px] rounded-lg">
                 Try now
               </button>
             </div>

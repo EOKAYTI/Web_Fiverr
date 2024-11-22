@@ -1,0 +1,105 @@
+.made_on {
+  padding: 40px 0;
+  .container {
+    h3 {
+      font-size: 48px;
+      margin-bottom: 48px;
+    }
+    .made_on_group {
+      height: 1220px;
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 5px;
+
+      .made_on_img {
+        width: 25%;
+        position: relative;
+
+        .overlay {
+          /* Ẩn overlay mặc định */
+          opacity: 0;
+          visibility: hidden; /* Giấu overlay */
+          transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Thêm hiệu ứng mượt cho overlay */
+
+          position: absolute;
+          // background-color: red;
+          border-radius: 12px;
+          padding: 20px 20px;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: space-between;
+
+          .overlay_icon {
+            width: 40px;
+            height: 40px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            order: 1;
+            align-self: flex-end;
+            i {
+            }
+          }
+          .overlay_content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;
+
+            p {
+              color: white;
+              font-size: 14px;
+              padding-left: 5px;
+              span {
+                font-weight: bold;
+
+                &:nth-last-child(1):hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+            .icon {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 40px;
+              height: 35px;
+              &:hover {
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                background-color: white;
+                color: black;
+              }
+            }
+          }
+        }
+
+        img {
+          border-radius: 12px;
+        }
+        &:hover .overlay {
+          opacity: 1; /* Hiện overlay */
+          visibility: visible; /* Hiện overlay */
+          transition: opacity 0.3s ease, visibility 0s linear 0s; /* Xóa độ trễ khi hiển thị */
+          background: linear-gradient(
+            to bottom,
+            rgba(128, 128, 128, 0.3),
+            rgba(0, 0, 0, 0.6)
+          ); /* Gradient tối dần từ trên xuống dưới */
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -12,6 +12,7 @@
           font-size: 48px;
           line-height: 1.2;
           span {
+            font-family: "Domine", serif;
             color: #1dbf73;
           }
         }
@@ -29,6 +30,8 @@
           }
         }
         button {
+          color: white;
+          font-weight: bold;
           &:hover {
             opacity: 0.8;
           }

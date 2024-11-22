@@ -12,6 +12,7 @@ import Make from "./components/Make/Make";
 import Logo from "./components/Logo/Logo";
 import Guides from "./components/Guides/Guides";
 import Freelance from "./components/Freelance/Freelance";
+import MadeOn from "./components/MadeOn/MadeOn";
 
 const HomeTemplate = () => {
   return (
@@ -25,6 +26,7 @@ const HomeTemplate = () => {
       <Goto />
       <Make />
       <Logo />
+      <MadeOn />
       <Guides />
       <Freelance />
       <Outlet />
