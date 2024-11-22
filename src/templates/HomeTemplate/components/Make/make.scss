@@ -4,15 +4,23 @@
     h3 {
       font-size: 40px;
       margin-bottom: 64px;
+      color: #404145;
     }
     .make_group {
       display: flex;
+
       margin-bottom: 64px;
       .make_item {
         margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
         img {
+          margin-bottom: 20px;
         }
         p {
+          color: #404145;
         }
       }
     }

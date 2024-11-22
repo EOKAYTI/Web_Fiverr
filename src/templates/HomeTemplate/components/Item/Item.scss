@@ -1,4 +1,5 @@
 .item {
+  margin-bottom: 40px;
   .item_group {
     display: flex;
     justify-content: space-evenly;
@@ -13,16 +14,19 @@
         transition: all 1.5s;
 
         &:hover {
-          //   background-color: #1dbf73;
+          // background-color: #1dbf73;
           background: radial-gradient(
             circle,
-            #1dbf73 30%,
-            white // rgba(29, 191, 115, 0) 100%
+            #76c29e 0%,
+            rgba(29, 191, 115, 0) 100%
           );
+
           cursor: pointer;
         }
         p {
           font-weight: bold;
+          font-size: 14px;
+          color: #222325;
           margin-top: 20px;
         }
         img {

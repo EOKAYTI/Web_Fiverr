@@ -8,6 +8,7 @@
     .made_on_group {
       height: 1220px;
       max-width: 1440px;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -75,7 +76,7 @@
               height: 35px;
               &:hover {
                 width: 40px;
-                height: 35px;
+                height: 40px;
                 border-radius: 100%;
                 background-color: white;
                 color: black;

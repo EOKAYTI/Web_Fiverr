@@ -15,8 +15,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-
         height: 200px;
 
         &:hover {
@@ -29,6 +27,7 @@
         img {
         }
         p {
+          margin-top: 20px;
           font-weight: bold;
         }
       }
