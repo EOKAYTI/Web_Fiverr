@@ -21,7 +21,7 @@ const MadeOn = () => {
                 </div>
               </div>
             </div>
-            <img src="./m1.webp" alt="" />
+            <img src="./madeOn/m1.webp" alt="" />
           </div>
           <div className="made_on_img">
             <div className="overlay">
@@ -38,7 +38,7 @@ const MadeOn = () => {
                 </div>
               </div>
             </div>
-            <img src="./m2.webp" alt="" />
+            <img src="./madeOn/m2.webp" alt="" />
           </div>
           <div className="made_on_img">
             <div className="overlay">
@@ -55,7 +55,7 @@ const MadeOn = () => {
                 </div>
               </div>
             </div>
-            <img src="./m3.webp" alt="" />
+            <img src="./madeOn/m3.webp" alt="" />
           </div>
           <div className="made_on_img">
             <div className="overlay">
@@ -72,7 +72,7 @@ const MadeOn = () => {
                 </div>
               </div>
             </div>
-            <img src="./m4.webp" alt="" />
+            <img src="./madeOn/m4.webp" alt="" />
           </div>
           <div className="made_on_img">
             <div className="overlay">
@@ -89,7 +89,7 @@ const MadeOn = () => {
                 </div>
               </div>
             </div>
-            <img src="./m5.webp" alt="" />
+            <img src="./madeOn/m5.webp" alt="" />
           </div>
           <div className="made_on_img">
             <div className="overlay">
@@ -106,7 +106,7 @@ const MadeOn = () => {
                 </div>
               </div>
             </div>
-            <img src="./m6.webp" alt="" />
+            <img src="./madeOn/m6.webp" alt="" />
           </div>
           <div className="made_on_img">
             <div className="overlay">
@@ -123,7 +123,7 @@ const MadeOn = () => {
                 </div>
               </div>
             </div>
-            <img src="./m7.webp" alt="" />
+            <img src="./madeOn/m7.webp" alt="" />
           </div>
           <div className="made_on_img">
             <div className="overlay">
@@ -140,7 +140,7 @@ const MadeOn = () => {
                 </div>
               </div>
             </div>
-            <img src="./m8.webp" alt="" />
+            <img src="./madeOn/m8.webp" alt="" />
           </div>
           <div className="made_on_img">
             <div className="overlay">
@@ -157,7 +157,7 @@ const MadeOn = () => {
                 </div>
               </div>
             </div>
-            <img src="./m9.webp" alt="" />
+            <img src="./madeOn/m9.webp" alt="" />
           </div>
           <div className="made_on_img">
             <div className="overlay">
@@ -174,7 +174,7 @@ const MadeOn = () => {
                 </div>
               </div>
             </div>
-            <img src="./m10.webp" alt="" />
+            <img src="./madeOn/m10.webp" alt="" />
           </div>
           <div className="made_on_img">
             <div className="overlay">
@@ -191,7 +191,7 @@ const MadeOn = () => {
                 </div>
               </div>
             </div>
-            <img src="./m11.webp" alt="" />
+            <img src="./madeOn/m11.webp" alt="" />
           </div>
           <div className="made_on_img">
             <div className="overlay">
@@ -208,7 +208,7 @@ const MadeOn = () => {
                 </div>
               </div>
             </div>
-            <img src="./m12.webp" alt="" />
+            <img src="./madeOn/m12.webp" alt="" />
           </div>
           <div className="made_on_img">
             <div className="overlay">
@@ -225,7 +225,7 @@ const MadeOn = () => {
                 </div>
               </div>
             </div>
-            <img src="./m13.webp" alt="" />
+            <img src="./madeOn/m13.webp" alt="" />
           </div>
           <div className="made_on_img">
             <div className="overlay">
@@ -242,7 +242,7 @@ const MadeOn = () => {
                 </div>
               </div>
             </div>
-            <img src="./m16.webp" alt="" />
+            <img src="./madeOn/m14.webp" alt="" />
           </div>
           <div className="made_on_img">
             <div className="overlay">
@@ -259,7 +259,7 @@ const MadeOn = () => {
                 </div>
               </div>
             </div>
-            <img src="./m17.webp" alt="" />
+            <img src="./madeOn/m15.webp" alt="" />
           </div>
           <div className="made_on_img">
             <div className="overlay">
@@ -276,7 +276,7 @@ const MadeOn = () => {
                 </div>
               </div>
             </div>
-            <img src="./m8.webp" alt="" />
+            <img src="./madeOn/m16.webp" alt="" />
           </div>
         </div>
       </div>
