@@ -2,6 +2,7 @@ import { useRoutes } from "react-router-dom";
 import { pathDefault } from "./common/path";
 
 import SignIn from "./pages/SignIn/SignIn";
+import SignUp from "./pages/SignUp/SignUp";
 import { Bounce, toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import React, { createContext, Suspense } from "react";
@@ -52,6 +53,10 @@ const arrRoutes = [
   {
     path: pathDefault.signIn,
     element: <SignIn />,
+  },
+  {
+    path: pathDefault.signUp,
+    element: <SignUp />,
   },
   {
     path: pathDefault.admin,

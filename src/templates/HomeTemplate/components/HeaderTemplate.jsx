@@ -116,12 +116,19 @@ const HeaderTemplate = () => {
             <ButtonGhost content={"Become a Seller"} />
             {!user ? (
               <>
-                <ButtonGhost content={"Sign In"} />
-                <ButtonOutline
+                <ButtonGhost
                   onClick={() => {
-                    navigate(pathDefault.signIn);
+                    console.log("đã click sign up");
+                    navigate(pathDefault.signUp);
                   }}
                   content={"Join"}
+                />
+                <ButtonOutline
+                  onClick={() => {
+                    console.log("đã click sign in");
+                    navigate(pathDefault.signIn);
+                  }}
+                  content={"Sign In"}
                 />
               </>
             ) : (
