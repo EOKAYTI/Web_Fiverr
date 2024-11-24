@@ -6,6 +6,8 @@ import { Bounce, toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import React, { createContext, Suspense } from "react";
 import AdminTemplate from "./templates/AdminTemplate/AdminTemplate";
+import HomePage from "./pages/HomeTemplate/HomePage";
+import SearchPage from "./pages/HomeTemplate/SearchPage";
 
 export const NotificationContext = createContext();
 
@@ -20,13 +22,32 @@ const ManagerUser = React.lazy(() => import("./pages/ManagerUser/ManagerUser"));
 
 const arrRoutes = [
   {
+    // chỉ cần dấu / là trang homePage
     path: pathDefault.homePage,
     element: (
       <Suspense fallback={<div>huhuh</div>}>
         <HomeTemplate />
       </Suspense>
     ),
-    children: [],
+    children: [
+      {
+        index: true,
+        element: (
+          <Suspense fallback={<div>huhuh</div>}>
+            <HomePage />
+          </Suspense>
+        ),
+      },
+      ,
+      {
+        path: "search",
+        element: (
+          <Suspense fallback={<div>huhuh</div>}>
+            <SearchPage />
+          </Suspense>
+        ),
+      },
+    ],
   },
   {
     path: pathDefault.signIn,
