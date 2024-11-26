@@ -19,11 +19,13 @@ import useViewPort from "../../../hooks/useViewPort";
 const HeaderTemplate = () => {
   const { width } = useViewPort();
   const [keyword, setKeyword] = useState("");
+  // useDebounch trì hoãn thực thi 1 hàm cho đến 1 khoảng thời gian nhất định
   const [value] = useDebounce(keyword, 1000);
   const [openDropdown, setOpenDropdown] = useState(false);
   const [listSearch, setListSearch] = useState([]);
   const { user } = useSelector((state) => state.userSlice);
   const navigate = useNavigate();
+
   const handleChangeKeyword = (event) => {
     setKeyword(event.target.value);
   };
