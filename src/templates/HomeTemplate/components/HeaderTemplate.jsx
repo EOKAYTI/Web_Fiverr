@@ -34,15 +34,23 @@ const HeaderTemplate = () => {
     setOpenDropdown(true);
   };
 
+  const handleSearch = (value) => {
+    if (value.trim()) {
+      navigate(`/search?query=${value.trim()}`); // Chuyển hướng sang trang khác
+    }
+  };
+
   // useMemo : cứ mỗi lần setState ==> re-render ==> cập nhật chạy mới toàn bộ các biến cũng như function bên trong ==> quản lí các biến giúp kiểm tra khi nào thì nên tạo mới
   // useCallback : ==> quản lí các function
 
+  // API tên công việc theo tên
   useEffect(() => {
     if (value) {
       congViecService
         .getCongViecTheoTen(value)
         .then((res) => {
           console.log(res);
+          console.log(res.data.content);
           setListSearch(res.data.content);
           setOpenDropdown(true);
         })
@@ -101,6 +109,7 @@ const HeaderTemplate = () => {
               >
                 <div className="w-full">
                   <InputSearch
+                    handleSearch={handleSearch}
                     handleClick={handleClickInputSearch}
                     handleChange={handleChangeKeyword}
                     value={keyword}

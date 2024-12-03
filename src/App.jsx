@@ -26,7 +26,7 @@ const arrRoutes = [
     // chỉ cần dấu / là trang homePage
     path: pathDefault.homePage,
     element: (
-      <Suspense fallback={<div>huhuh</div>}>
+      <Suspense fallback={<div>Loading ...</div>}>
         <HomeTemplate />
       </Suspense>
     ),
@@ -34,7 +34,7 @@ const arrRoutes = [
       {
         index: true,
         element: (
-          <Suspense fallback={<div>huhuh</div>}>
+          <Suspense fallback={<div>Loading ...</div>}>
             <HomePage />
           </Suspense>
         ),
@@ -43,7 +43,7 @@ const arrRoutes = [
       {
         path: "search",
         element: (
-          <Suspense fallback={<div>huhuh</div>}>
+          <Suspense fallback={<div>Loading ...</div>}>
             <SearchPage />
           </Suspense>
         ),
@@ -65,7 +65,7 @@ const arrRoutes = [
       {
         index: true,
         element: (
-          <Suspense fallback={<div>huhuh</div>}>
+          <Suspense fallback={<div>Loading ...</div>}>
             <ManagerUser />
           </Suspense>
         ),
@@ -73,7 +73,7 @@ const arrRoutes = [
       {
         path: "manager-user",
         element: (
-          <Suspense fallback={<div>huhuh</div>}>
+          <Suspense fallback={<div>Loading ...</div>}>
             <ManagerUser />
           </Suspense>
         ),
@@ -81,7 +81,7 @@ const arrRoutes = [
       {
         path: "manager-job",
         element: (
-          <Suspense fallback={<div>huhuh</div>}>
+          <Suspense fallback={<div>Loading ...</div>}>
             <ManagerJob />
           </Suspense>
         ),
@@ -89,7 +89,7 @@ const arrRoutes = [
       {
         path: "manager-comment",
         element: (
-          <Suspense fallback={<div>huhuh</div>}>
+          <Suspense fallback={<div>Loading ...</div>}>
             <ManagerComment />
           </Suspense>
         ),

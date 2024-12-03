@@ -1,0 +1,36 @@
+.relate_item {
+  height: 360px;
+  .relate_group {
+    .relate_content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-top: 10px;
+      .content_left {
+        display: flex;
+        align-items: center;
+        p {
+          margin-left: 5px;
+          span {
+            color: #62646a;
+          }
+        }
+      }
+
+      .content_right {
+      }
+    }
+    p {
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    .relate_price {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+}
