@@ -1,0 +1,69 @@
+.detail_item {
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .detail_info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 24px;
+    img {
+    }
+    .info {
+      p {
+      }
+    }
+  }
+  .detai_img {
+    width: 100%;
+    margin: 24px 0;
+  }
+  .detail_content {
+    h2 {
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    p {
+    }
+  }
+}
+
+.comment {
+  .comment_group {
+    border: 1px solid #e4e5e7;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 16px 24px;
+    .comment_info {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      border-bottom: 1px solid #e4e5e7;
+      padding-bottom: 20px;
+      img {
+      }
+      .info_user {
+        margin-left: 10px;
+        .infor_name {
+          font-weight: bold;
+        }
+      }
+    }
+    .comment_rating {
+      display: flex;
+      justify-content: flex-start;
+      .star {
+      }
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+    }
+    .comment_content {
+    }
+  }
+}

@@ -1,5 +1,12 @@
 .relate_item {
   height: 360px;
+  width: 100%;
+  &:hover {
+    .tenCongViec {
+      text-decoration: underline;
+    }
+    cursor: pointer;
+  }
   .relate_group {
     .relate_content {
       display: flex;
@@ -22,10 +29,6 @@
       }
     }
     p {
-      &:hover {
-        text-decoration: underline;
-        cursor: pointer;
-      }
     }
     .relate_price {
       display: flex;

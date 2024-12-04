@@ -12,14 +12,15 @@ const ListDetail = () => {
       .catch((err) => {
         console.log(err);
       });
-  });
+  }, []);
+
   return (
     <section className="list_detail">
       <div className="container">
         <div className="list_group">
           <div className="list_item">
             <img src="" alt="" />
-            <div className="item_content">hello</div>
+            <div className="item_content"></div>
           </div>
         </div>
       </div>

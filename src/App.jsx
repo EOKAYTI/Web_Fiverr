@@ -9,6 +9,7 @@ import React, { createContext, Suspense } from "react";
 import AdminTemplate from "./templates/AdminTemplate/AdminTemplate";
 import HomePage from "./pages/HomeTemplate/HomePage";
 import SearchPage from "./pages/HomeTemplate/SearchPage";
+import DetailPage from "./pages/HomeTemplate/DetailPage";
 
 export const NotificationContext = createContext();
 
@@ -45,6 +46,14 @@ const arrRoutes = [
         element: (
           <Suspense fallback={<div>Loading ...</div>}>
             <SearchPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: "detail/:id",
+        element: (
+          <Suspense fallback={<div>Loading ...</div>}>
+            <DetailPage />
           </Suspense>
         ),
       },

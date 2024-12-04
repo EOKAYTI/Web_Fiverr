@@ -4,7 +4,7 @@ import ResultsDropdown from "../../../../components/ResultsDropdown/ResultsDropd
 import { Switch } from "antd";
 
 import DropdownHeader from "../../../../components/dropdown/DropdownHeader";
-const Results = () => {
+const Results = ({ result, number }) => {
   const onChange = (checked) => {
     console.log(`switch to ${checked}`);
   };
@@ -13,7 +13,7 @@ const Results = () => {
       <div className="container">
         <div className="results_content">
           <h1>
-            Results for <span>design graphics</span>
+            Results for <span>{result}</span>
           </h1>
           <div className="results_group">
             <div className="results_dropdown">
@@ -29,7 +29,7 @@ const Results = () => {
             </div>
           </div>
           <div className="results_number">
-            <p>19,000+ results</p>
+            <p>{number} results</p>
             <div className="results_sort">
               <p>Sort by:</p>
               <DropdownHeader buttonContent="Relevance" />

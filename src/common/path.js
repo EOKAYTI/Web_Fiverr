@@ -1,6 +1,7 @@
 export const pathDefault = {
   homePage: "/",
   searchPage: "/search",
+  dedtailPage: "/detail",
   signIn: "/sign-in",
   signUp: "/sign-up",
   admin: "/admin",

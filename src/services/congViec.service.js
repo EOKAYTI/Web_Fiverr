@@ -7,4 +7,11 @@ export const congViecService = {
   getCongViecTheoChiTietLoai: (keyword) => {
     return http.get(`/cong-viec/lay-cong-viec-theo-chi-tiet-loai/${keyword}`);
   },
+  getMenuLoaiCongViec: () => {
+    return http.get("/cong-viec/lay-menu-loai-cong-viec");
+  },
+  getCongViecChiTiet: (id) => {
+    return http.get(`/cong-viec/lay-cong-viec-chi-tiet/${id}`);
+    t;
+  },
 };
