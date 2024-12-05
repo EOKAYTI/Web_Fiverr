@@ -1,0 +1,48 @@
+.info {
+  .info_content {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    .info_left {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      padding: 40px 0;
+
+      .avatar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #f3f4f6; /* Màu nền mặc định */
+        font-size: 150px;
+        font-weight: bold;
+        color: #ffffff; /* Màu chữ */
+
+        .avatar-initials {
+          background-color: #3b82f6; /* Màu nền cho chữ cái */
+          width: 150px;
+          height: 150px;
+        }
+        i.fa-user {
+          font-size: 150px;
+          color: #9ca3af; /* Màu xám cho icon */
+        }
+      }
+      .name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+    }
+    .info_right {
+      width: 50%;
+      background-color: white;
+    }
+  }
+}

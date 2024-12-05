@@ -12,7 +12,32 @@
     img {
     }
     .info {
+      margin-left: 14px;
+      .info_title {
+        display: flex;
+        align-items: center;
+        .info_name {
+          text-transform: capitalize;
+          font-size: 18px;
+          margin-right: 10px;
+          border-right: 1px solid #e4e5e7;
+          padding-right: 10px;
+          font-weight: bold;
+        }
+      }
+
       p {
+      }
+      .info_rating {
+        display: flex;
+        align-items: center;
+        p {
+          margin-left: 5px;
+        }
+        .danhGia {
+          text-decoration: underline;
+          color: #74767e;
+        }
       }
     }
   }
@@ -52,18 +77,112 @@
         }
       }
     }
-    .comment_rating {
-      display: flex;
-      justify-content: flex-start;
-      .star {
+    .comment_upper {
+      .comment_rating {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 16px;
+        .star {
+        }
+        p {
+          font-size: 18px;
+          font-weight: bold;
+          margin-left: 5px;
+        }
       }
-      p {
-        font-size: 18px;
-        font-weight: bold;
-        margin-left: 5px;
+      .comment_content {
+      }
+      .comment_bottom {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 10px;
+        .bottom_left {
+          border-right: 1px solid #e4e5e7;
+          padding-right: 50px;
+          .upto {
+            font-weight: bold;
+          }
+          .second {
+            color: #62646a;
+          }
+        }
+        .bottom_right {
+          padding-left: 50px;
+
+          .day {
+            font-weight: bold;
+          }
+          .second {
+            color: #62646a;
+          }
+        }
       }
     }
-    .comment_content {
+  }
+}
+
+.moTa {
+  padding: 10px 150px;
+  position: sticky;
+  top: 50px;
+  .moTa_top {
+    border: 1px solid #e4e5e7;
+    padding: 20px;
+    border-radius: 8px;
+    .moTa_title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .moTa_price {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      .price_title {
+      }
+      .price {
+        font-size: 20px;
+      }
+    }
+    .moTa_content {
+      color: #62646a;
+      p {
+      }
+    }
+    .moTa_btn {
+      button {
+        background-color: black;
+        color: white;
+        padding: 12px 24px;
+        width: 100%;
+        border-radius: 8px;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    .moTa_compare {
+      text-align: center;
+      a {
+      }
+    }
+  }
+  .moTa_bottom {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #fafafa;
+    border-radius: 8px;
+    padding: 24px 0;
+    .btn_contact {
+      button {
+        border: 1px solid black;
+        padding: 12px 100px;
+        border-radius: 8px;
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+      }
     }
   }
 }

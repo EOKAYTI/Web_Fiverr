@@ -2,3 +2,31 @@
   max-width: 600px;
   min-width: unset !important;
 }
+
+.info_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f3f4f6; /* Màu nền mặc định */
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff; /* Màu chữ */
+
+  .avatar-initials {
+    background-color: #3b82f6; /* Màu nền cho chữ cái */
+    width: 30px;
+    height: 30px;
+  }
+  i.fa-user {
+    font-size: 30px;
+    color: #9ca3af; /* Màu xám cho icon */
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

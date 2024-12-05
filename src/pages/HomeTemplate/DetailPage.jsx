@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 
 import "./detailPage.scss";
 import { binhLuanService } from "../../services/binhLuan.service";
+import { Button } from "antd";
 
 const DetailPage = () => {
   const { id } = useParams(); // Lấy id từ URL
@@ -58,14 +59,66 @@ const DetailPage = () => {
           <div className="detail_info">
             <img className="w-16 rounded-full" src={item.avatar} alt="" />
             <div className="info">
-              <p>{item.tenNguoiTao}</p>
-              <p>3 orders in queue</p>
-              <i class="fa-solid fa-star"></i>2.0 (77 reviews)
+              <div className="info_title">
+                <p className="info_name">{item.tenNguoiTao}</p>
+                <p>3 orders in queue</p>
+              </div>
+              <div className="info_rating">
+                {Array.from({ length: 5 }, (_, index) => (
+                  <i
+                    key={index}
+                    className={
+                      index < item.congViec.saoCongViec
+                        ? "fa-solid fa-star " // Icon tô màu
+                        : "fa-regular fa-star" // Icon không tô màu
+                    }
+                  ></i>
+                ))}
+                <p>{`${item.congViec.saoCongViec}.0`}</p>
+                <p className="danhGia">{`(${item.congViec.danhGia})`}</p>
+              </div>
             </div>
           </div>
           <img className="detai_img" src={item.congViec.hinhAnh} alt="" />
           <div className="detail_content">
             <p>{item.congViec.moTa}</p>
+          </div>
+        </div>
+      );
+    });
+  });
+
+  const itemMoTa = useMemo(() => {
+    return detailJob.map((item, index) => {
+      return (
+        <div className="moTa">
+          <div className="moTa_top space-y-4">
+            <div className="moTa_title">Basic</div>
+            <div className="moTa_price">
+              <div className="price_title">✅ Basic Pack</div>
+              <div className="price"> US${item.congViec.giaTien}</div>
+            </div>
+            <div className="moTa_content">
+              <p>{item.congViec.moTaNgan}</p>
+            </div>
+            <div className="moTa_btn">
+              <button>Continue</button>
+            </div>
+            <div className="moTa_compare">
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault(); // Vô hiệu hóa hành động mặc định
+                }}
+              >
+                Compare packages
+              </a>
+            </div>
+          </div>
+          <div className="moTa_bottom">
+            <div className="btn_contact">
+              <button>Contact me</button>
+            </div>
           </div>
         </div>
       );
@@ -98,24 +151,35 @@ const DetailPage = () => {
                   <p>{item.ngayBinhLuan}</p>
                 </div>
               </div>
-              <div className="comment_rating">
-                <div className="star">
-                  {Array.from({ length: 5 }, (_, index) => (
-                    <i
-                      key={index}
-                      className={
-                        index < item.saoBinhLuan
-                          ? "fa-solid fa-star " // Icon tô màu
-                          : "fa-regular fa-star" // Icon không tô màu
-                      }
-                    ></i>
-                  ))}
+              <div className="comment_upper space-y-2">
+                <div className="comment_rating">
+                  <div className="star space-x-1">
+                    {Array.from({ length: 5 }, (_, index) => (
+                      <i
+                        key={index}
+                        className={
+                          index < item.saoBinhLuan
+                            ? "fa-solid fa-star " // Icon tô màu
+                            : "fa-regular fa-star" // Icon không tô màu
+                        }
+                      ></i>
+                    ))}
+                  </div>
+                  <p>{item.saoBinhLuan}</p>
                 </div>
-
-                <p>{item.saoBinhLuan}</p>
-              </div>
-              <div className="comment_content">
-                <p>{item.noiDung}</p>
+                <div className="comment_content">
+                  <p>{item.noiDung}</p>
+                </div>
+                <div className="comment_bottom">
+                  <div className="bottom_left">
+                    <p className="upto">Up to US$50</p>
+                    <p className="second">Price </p>
+                  </div>
+                  <div className="bottom_right">
+                    <p className="day">3 days</p>
+                    <p className="second">Duration</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -123,6 +187,7 @@ const DetailPage = () => {
       );
     });
   });
+
   return (
     <div>
       <section className="sub_menu">
@@ -137,7 +202,7 @@ const DetailPage = () => {
             <div className="detail_left w-6/12">
               {itemDetailJob} {itemListComment}
             </div>
-            <div className="detail_right w-6/12">hi</div>
+            <div className="detail_right w-6/12">{itemMoTa}</div>
           </div>
         </div>
       </section>

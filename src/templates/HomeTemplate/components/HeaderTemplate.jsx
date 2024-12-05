@@ -143,9 +143,25 @@ const HeaderTemplate = () => {
                 />
               </>
             ) : (
-              <p className="w-max inline-block">{user.name}</p>
+              <p
+                className="info_logo"
+                // className="info_logo w-max inline-block"
+                onClick={() => {
+                  navigate(`/info/${user.id}`);
+                }}
+              >
+                {/* {user.name} */}
+                {user.name ? (
+                  <div className="avatar-initials bg-blue-500 text-white rounded-full flex items-center justify-center text-base font-bold">
+                    {user.name.charAt(0).toUpperCase()}{" "}
+                    {/* Lấy chữ cái đầu và in hoa */}
+                  </div>
+                ) : (
+                  <i className="fa-regular fa-user text-gray-400 text-9xl"></i>
+                )}
+              </p>
             )}
-            <Link to={pathDefault.admin}>Tới giao diện admin</Link>
+            <Link to={pathDefault.admin}>go to admin</Link>
           </div>
         </div>
       </div>

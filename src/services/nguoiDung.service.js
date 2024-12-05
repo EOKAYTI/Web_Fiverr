@@ -10,4 +10,7 @@ export const nguoiDungService = {
   themNguoiDung: (data) => {
     return http.post("/users", data);
   },
+  layNguoiDungBangId: (id) => {
+    return http.get(`users/${id}`);
+  },
 };
