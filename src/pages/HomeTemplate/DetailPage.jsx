@@ -27,7 +27,7 @@ const DetailPage = () => {
   const itemDetailJob = useMemo(() => {
     return detailJob.map((item, index) => {
       return (
-        <div className="detail_item">
+        <div key={index} className="detail_item">
           <h1>{item.congViec.tenCongViec}</h1>
           <div className="detail_info">
             <img className="w-16 rounded-full" src={item.avatar} alt="" />
@@ -64,7 +64,7 @@ const DetailPage = () => {
   const itemMoTa = useMemo(() => {
     return detailJob.map((item, index) => {
       return (
-        <div className="moTa">
+        <div key={index} className="moTa">
           <div className="moTa_top space-y-4">
             <div className="moTa_title">Basic</div>
             <div className="moTa_price">
@@ -114,7 +114,7 @@ const DetailPage = () => {
   const itemListComment = useMemo(() => {
     return listComment.map((item, index) => {
       return (
-        <div className="comment">
+        <div key={index} className="comment">
           <div className="container">
             <div className="comment_group">
               <div className="comment_info">

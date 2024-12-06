@@ -21,7 +21,6 @@ const SearchPage = () => {
         .getCongViecTheoTen(value)
         .then((res) => {
           console.log(res);
-          console.log(res.data.content);
           setListRelate(res.data.content);
           setOpenDropdown(true);
         })
@@ -63,7 +62,7 @@ const SearchPage = () => {
             </div>
             <p className="tenCongViec">{item.congViec.tenCongViec}</p>
             <div className="relate_price">
-              <i class="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
               <p>{item.congViec.saoCongViec}</p>
               <p>{`(${item.congViec.danhGia})`}</p>
             </div>

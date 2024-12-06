@@ -9,7 +9,7 @@ const Make = () => {
           <div className="make_group">
             <div className="make_item">
               <img
-                class="_19aaquz1j _19aaquz1l _19aaquz14 _19aaquz16"
+                className="_19aaquz1j _19aaquz1l _19aaquz14 _19aaquz16"
                 alt="Access a pool of top talent across 700 categories"
                 src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/categories.8badf97.svg"
               ></img>
@@ -17,7 +17,7 @@ const Make = () => {
             </div>
             <div className="make_item">
               <img
-                class="_19aaquz1j _19aaquz1l _19aaquz14 _19aaquz16"
+                className="_19aaquz1j _19aaquz1l _19aaquz14 _19aaquz16"
                 alt="Enjoy a simple, easy-to-use matching experience"
                 src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/matching.0eef7cc.svg"
               />
@@ -25,7 +25,7 @@ const Make = () => {
             </div>
             <div className="make_item">
               <img
-                class="_19aaquz1j _19aaquz1l _19aaquz14 _19aaquz16"
+                className="_19aaquz1j _19aaquz1l _19aaquz14 _19aaquz16"
                 alt="Get quality work done quickly and within budget"
                 src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/quickly.6879514.svg"
               />
@@ -33,7 +33,7 @@ const Make = () => {
             </div>
             <div className="make_item">
               <img
-                class="_19aaquz1j _19aaquz1l _19aaquz14 _19aaquz16"
+                className="_19aaquz1j _19aaquz1l _19aaquz14 _19aaquz16"
                 alt="Only pay when you’re happy"
                 src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/happy.42ed7bd.svg"
               />

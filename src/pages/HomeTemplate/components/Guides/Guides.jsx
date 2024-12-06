@@ -117,21 +117,6 @@ const Guides = () => {
             </div>
           </Slider>
         </div>
-
-        {/* <div className="guides_group">
-          <div className="guides_item">
-            <img src="./guides/gui1.webp" alt="" />
-            <p>Start a side business</p>
-          </div>
-          <div className="guides_item">
-            <img src="./guides/gui2.webp" alt="" />
-            <p>Ecommerce bussiness ideas</p>
-          </div>
-          <div className="guides_item">
-            <img src="./guides/gui3.webp" alt="" />
-            <p>Start an online business and work form home</p>
-          </div>
-        </div> */}
       </div>
     </section>
   );

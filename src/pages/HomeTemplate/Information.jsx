@@ -13,7 +13,6 @@ const Information = () => {
       .layNguoiDungBangId(id)
       .then((res) => {
         console.log(res);
-        console.log(res.data.content);
         let item = res.data.content;
         setInfo(item);
       })

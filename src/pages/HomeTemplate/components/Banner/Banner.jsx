@@ -34,13 +34,11 @@ const Banner = () => {
       congViecService
         .getCongViecTheoTen(value)
         .then((res) => {
-          console.log("thành công");
           console.log(res);
           setListSearch(res.data.content);
           setOpenDropdown(true);
         })
         .catch((err) => {
-          console.log("thất bại");
           console.log(err);
         });
     }
@@ -78,13 +76,6 @@ const Banner = () => {
               Scale your professional workforce with <span>freelancers</span>
             </h1>
             <div className="banner_search">
-              {/* <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Search for any service..."
-              />
-              <i class="fa-solid fa-magnifying-glass"></i> */}
               {width > 576 && (
                 <Dropdown
                   overlayClassName="dropdown-suggest"

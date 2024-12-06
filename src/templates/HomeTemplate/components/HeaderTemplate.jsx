@@ -143,7 +143,7 @@ const HeaderTemplate = () => {
                 />
               </>
             ) : (
-              <p
+              <a
                 className="info_logo"
                 // className="info_logo w-max inline-block"
                 onClick={() => {
@@ -159,7 +159,7 @@ const HeaderTemplate = () => {
                 ) : (
                   <i className="fa-regular fa-user text-gray-400 text-9xl"></i>
                 )}
-              </p>
+              </a>
             )}
             {/* <Link to={pathDefault.admin}>go to admin</Link> */}
           </div>

@@ -9,7 +9,7 @@ const MadeOn = () => {
           <div className="made_on_img">
             <div className="overlay">
               <div className="overlay_icon">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </div>
               <div className="overlay_content">
                 <p>
@@ -17,7 +17,7 @@ const MadeOn = () => {
                   <br /> by: <span>canhphuoc</span>
                 </p>
                 <div className="icon">
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis"></i>
                 </div>
               </div>
             </div>
@@ -26,7 +26,7 @@ const MadeOn = () => {
           <div className="made_on_img">
             <div className="overlay">
               <div className="overlay_icon">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </div>
               <div className="overlay_content">
                 <p>
@@ -34,7 +34,7 @@ const MadeOn = () => {
                   <br /> by: <span>canhphuoc</span>
                 </p>
                 <div className="icon">
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis"></i>
                 </div>
               </div>
             </div>
@@ -43,7 +43,7 @@ const MadeOn = () => {
           <div className="made_on_img">
             <div className="overlay">
               <div className="overlay_icon">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </div>
               <div className="overlay_content">
                 <p>
@@ -51,7 +51,7 @@ const MadeOn = () => {
                   <br /> by: <span>canhphuoc</span>
                 </p>
                 <div className="icon">
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis"></i>
                 </div>
               </div>
             </div>
@@ -60,7 +60,7 @@ const MadeOn = () => {
           <div className="made_on_img">
             <div className="overlay">
               <div className="overlay_icon">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </div>
               <div className="overlay_content">
                 <p>
@@ -68,7 +68,7 @@ const MadeOn = () => {
                   <br /> by: <span>canhphuoc</span>
                 </p>
                 <div className="icon">
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis"></i>
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ const MadeOn = () => {
           <div className="made_on_img">
             <div className="overlay">
               <div className="overlay_icon">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </div>
               <div className="overlay_content">
                 <p>
@@ -85,7 +85,7 @@ const MadeOn = () => {
                   <br /> by: <span>canhphuoc</span>
                 </p>
                 <div className="icon">
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis"></i>
                 </div>
               </div>
             </div>
@@ -94,7 +94,7 @@ const MadeOn = () => {
           <div className="made_on_img">
             <div className="overlay">
               <div className="overlay_icon">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </div>
               <div className="overlay_content">
                 <p>
@@ -102,7 +102,7 @@ const MadeOn = () => {
                   <br /> by: <span>canhphuoc</span>
                 </p>
                 <div className="icon">
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis"></i>
                 </div>
               </div>
             </div>
@@ -111,7 +111,7 @@ const MadeOn = () => {
           <div className="made_on_img">
             <div className="overlay">
               <div className="overlay_icon">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </div>
               <div className="overlay_content">
                 <p>
@@ -119,7 +119,7 @@ const MadeOn = () => {
                   <br /> by: <span>canhphuoc</span>
                 </p>
                 <div className="icon">
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis"></i>
                 </div>
               </div>
             </div>
@@ -128,7 +128,7 @@ const MadeOn = () => {
           <div className="made_on_img">
             <div className="overlay">
               <div className="overlay_icon">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </div>
               <div className="overlay_content">
                 <p>
@@ -136,7 +136,7 @@ const MadeOn = () => {
                   <br /> by: <span>canhphuoc</span>
                 </p>
                 <div className="icon">
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis"></i>
                 </div>
               </div>
             </div>
@@ -145,7 +145,7 @@ const MadeOn = () => {
           <div className="made_on_img">
             <div className="overlay">
               <div className="overlay_icon">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </div>
               <div className="overlay_content">
                 <p>
@@ -153,7 +153,7 @@ const MadeOn = () => {
                   <br /> by: <span>canhphuoc</span>
                 </p>
                 <div className="icon">
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis"></i>
                 </div>
               </div>
             </div>
@@ -162,7 +162,7 @@ const MadeOn = () => {
           <div className="made_on_img">
             <div className="overlay">
               <div className="overlay_icon">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </div>
               <div className="overlay_content">
                 <p>
@@ -170,7 +170,7 @@ const MadeOn = () => {
                   <br /> by: <span>canhphuoc</span>
                 </p>
                 <div className="icon">
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis"></i>
                 </div>
               </div>
             </div>
@@ -179,7 +179,7 @@ const MadeOn = () => {
           <div className="made_on_img">
             <div className="overlay">
               <div className="overlay_icon">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </div>
               <div className="overlay_content">
                 <p>
@@ -187,7 +187,7 @@ const MadeOn = () => {
                   <br /> by: <span>canhphuoc</span>
                 </p>
                 <div className="icon">
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis"></i>
                 </div>
               </div>
             </div>
@@ -196,7 +196,7 @@ const MadeOn = () => {
           <div className="made_on_img">
             <div className="overlay">
               <div className="overlay_icon">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </div>
               <div className="overlay_content">
                 <p>
@@ -204,7 +204,7 @@ const MadeOn = () => {
                   <br /> by: <span>canhphuoc</span>
                 </p>
                 <div className="icon">
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis"></i>
                 </div>
               </div>
             </div>
@@ -213,7 +213,7 @@ const MadeOn = () => {
           <div className="made_on_img">
             <div className="overlay">
               <div className="overlay_icon">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </div>
               <div className="overlay_content">
                 <p>
@@ -221,7 +221,7 @@ const MadeOn = () => {
                   <br /> by: <span>canhphuoc</span>
                 </p>
                 <div className="icon">
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis"></i>
                 </div>
               </div>
             </div>
@@ -230,7 +230,7 @@ const MadeOn = () => {
           <div className="made_on_img">
             <div className="overlay">
               <div className="overlay_icon">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </div>
               <div className="overlay_content">
                 <p>
@@ -238,7 +238,7 @@ const MadeOn = () => {
                   <br /> by: <span>canhphuoc</span>
                 </p>
                 <div className="icon">
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis"></i>
                 </div>
               </div>
             </div>
@@ -247,7 +247,7 @@ const MadeOn = () => {
           <div className="made_on_img">
             <div className="overlay">
               <div className="overlay_icon">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </div>
               <div className="overlay_content">
                 <p>
@@ -255,7 +255,7 @@ const MadeOn = () => {
                   <br /> by: <span>canhphuoc</span>
                 </p>
                 <div className="icon">
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis"></i>
                 </div>
               </div>
             </div>
@@ -264,7 +264,7 @@ const MadeOn = () => {
           <div className="made_on_img">
             <div className="overlay">
               <div className="overlay_icon">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </div>
               <div className="overlay_content">
                 <p>
@@ -272,7 +272,7 @@ const MadeOn = () => {
                   <br /> by: <span>canhphuoc</span>
                 </p>
                 <div className="icon">
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis"></i>
                 </div>
               </div>
             </div>

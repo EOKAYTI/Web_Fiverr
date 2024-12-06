@@ -82,15 +82,6 @@ const Services = () => {
       },
     ],
   };
-  // function CustomArrows() {
-  //   const settings = {
-  //     dots: true,
-  //     infinite: true,
-  //     slidesToShow: 3,
-  //     slidesToScroll: 1,
-  //     nextArrow: <SampleNextArrow />,
-  //     prevArrow: <SamplePrevArrow />
-  //   };
 
   return (
     <section className="services">
