@@ -5,6 +5,7 @@ import { congViecService } from "../../../../services/congViec.service";
 import { useDebounce } from "use-debounce";
 import { Dropdown } from "antd";
 import useViewPort from "../../../../hooks/useViewPort";
+import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
   const { width } = useViewPort();
@@ -14,11 +15,19 @@ const Banner = () => {
 
   const [openDropdown, setOpenDropdown] = useState(false);
 
+  const navigate = useNavigate();
+
   const handleChangeKeyword = (event) => {
     setKeyword(event.target.value);
   };
   const handleClickInputSearch = () => {
     setOpenDropdown(true);
+  };
+
+  const handleSearch = (value) => {
+    if (value.trim()) {
+      navigate(`/search?query=${value.trim()}`); // Chuyển hướng sang trang khác
+    }
   };
   useEffect(() => {
     if (value) {
@@ -89,6 +98,7 @@ const Banner = () => {
                 >
                   <div className="w-full">
                     <InputSearch
+                      handleSearch={handleSearch}
                       handleClick={handleClickInputSearch}
                       handleChange={handleChangeKeyword}
                       value={keyword}

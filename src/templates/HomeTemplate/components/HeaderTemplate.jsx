@@ -161,7 +161,7 @@ const HeaderTemplate = () => {
                 )}
               </p>
             )}
-            <Link to={pathDefault.admin}>go to admin</Link>
+            {/* <Link to={pathDefault.admin}>go to admin</Link> */}
           </div>
         </div>
       </div>

@@ -1,41 +1,14 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { congViecService } from "../../services/congViec.service";
 import { useParams } from "react-router-dom";
-
-import "./detailPage.scss";
 import { binhLuanService } from "../../services/binhLuan.service";
-import { Button } from "antd";
+import Nav from "./components/Nav/Nav";
+import "./detailPage.scss";
 
 const DetailPage = () => {
   const { id } = useParams(); // Lấy id từ URL
-  console.log(id);
-
-  const [listMenu, setListMenu] = useState([]);
   const [detailJob, setDetailJob] = useState([]);
   const [listComment, setListComment] = useState([]);
-
-  // GET: /api/cong-viec/lay-menu-loai-cong-viec
-  useEffect(() => {
-    congViecService
-      .getMenuLoaiCongViec()
-      .then((res) => {
-        console.log(res);
-        setListMenu(res.data.content);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
-
-  const itemListMenu = useMemo(() => {
-    return listMenu.map((item, index) => {
-      return (
-        <div className="menu_item">
-          <p>{item.tenLoaiCongViec}</p>
-        </div>
-      );
-    });
-  });
 
   // GET: /api/cong-viec/lay-cong-viec-chi-tiet/{MaCongViec}
   useEffect(() => {
@@ -190,12 +163,7 @@ const DetailPage = () => {
 
   return (
     <div>
-      <section className="sub_menu">
-        <div className="container">
-          <div className="menu_group flex justify-between ">{itemListMenu}</div>
-        </div>
-      </section>
-
+      <Nav />
       <section className="detail">
         <div className="container">
           <div className="detail_group flex justify-between">

@@ -12,6 +12,5 @@ export const congViecService = {
   },
   getCongViecChiTiet: (id) => {
     return http.get(`/cong-viec/lay-cong-viec-chi-tiet/${id}`);
-    t;
   },
 };

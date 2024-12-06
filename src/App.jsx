@@ -11,17 +11,22 @@ import HomePage from "./pages/HomeTemplate/HomePage";
 import SearchPage from "./pages/HomeTemplate/SearchPage";
 import DetailPage from "./pages/HomeTemplate/DetailPage";
 import Information from "./pages/HomeTemplate/Information";
+import Category from "./pages/HomeTemplate/Category";
 
 export const NotificationContext = createContext();
 
 const HomeTemplate = React.lazy(() =>
   import("./templates/HomeTemplate/HomeTemplate")
 );
-const ManagerJob = React.lazy(() => import("./pages/ManagerJob/ManagerJob"));
-const ManagerComment = React.lazy(() =>
-  import("./pages/ManagerComment/ManagerComment")
+const ManagerJob = React.lazy(() =>
+  import("./pages/AdminTemplate/ManagerJob/ManagerJob")
 );
-const ManagerUser = React.lazy(() => import("./pages/ManagerUser/ManagerUser"));
+const ManagerComment = React.lazy(() =>
+  import("./pages/AdminTemplate/ManagerComment/ManagerComment")
+);
+const ManagerUser = React.lazy(() =>
+  import("./pages/AdminTemplate/ManagerUser/ManagerUser")
+);
 
 const arrRoutes = [
   {
@@ -63,6 +68,14 @@ const arrRoutes = [
         element: (
           <Suspense fallback={<div>Loading ...</div>}>
             <Information />
+          </Suspense>
+        ),
+      },
+      {
+        path: "category/:id",
+        element: (
+          <Suspense fallback={<div>Loading ...</div>}>
+            <Category />
           </Suspense>
         ),
       },

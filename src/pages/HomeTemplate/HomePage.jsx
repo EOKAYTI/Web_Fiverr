@@ -9,7 +9,6 @@ import Make from "./components/Make/Make";
 import Logo from "./components/Logo/Logo";
 import MadeOn from "./components/MadeOn/MadeOn";
 import Guides from "./components/Guides/Guides";
-import { Outlet } from "react-router-dom";
 
 const HomePage = () => {
   return (

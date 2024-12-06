@@ -1,0 +1,27 @@
+.menu_item {
+  .menu_hover {
+    color: #62646a;
+    cursor: pointer; // Thay đổi con trỏ chuột thành dạng pointer
+    position: relative; // Để dùng `::after`
+
+    &::after {
+      content: ""; // Thêm phần tử rỗng để tạo thanh ngang
+      position: absolute;
+      bottom: -4px; // Đặt thanh ngang phía dưới chữ
+      left: 0;
+      width: 0; // Ban đầu thanh ngang có độ rộng 0
+      height: 2px; // Độ dày của thanh ngang
+      background-color: #1dbf73; // Màu của thanh ngang
+      transition: width 0.3s ease-in-out; // Hiệu ứng mở rộng khi hover
+    }
+
+    &:hover::after {
+      width: 100%; // Khi hover, thanh ngang mở rộng toàn bộ chiều rộng của chữ
+    }
+  }
+}
+
+.sub_menu {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 10px 0;
+}

@@ -1,39 +1,34 @@
-.relate_item {
-  height: 360px;
-  width: 100%;
-  &:hover {
-    .tenCongViec {
-      text-decoration: underline;
-    }
-    cursor: pointer;
-  }
-  .relate_group {
-    .relate_content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+.nhom_container {
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+  .nhom_column {
+    flex: 1;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    background: #fff;
+    text-align: center;
 
-      margin-top: 10px;
-      .content_left {
-        display: flex;
-        align-items: center;
-        p {
-          margin-left: 5px;
-          span {
-            color: #62646a;
-          }
-        }
-      }
+    img {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 12px;
+    }
 
-      .content_right {
+    h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .nhom_relate {
+      p {
+        margin: 4px 0;
+        font-size: 14px;
+        color: #555;
       }
-    }
-    p {
-    }
-    .relate_price {
-      display: flex;
-      align-items: center;
-      gap: 5px;
     }
   }
 }
