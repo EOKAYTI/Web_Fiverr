@@ -5,39 +5,118 @@
     padding: 50px 0;
     .info_left {
       width: 30%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: white;
-      padding: 40px 0;
-
-      .avatar {
+      .user_info {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background-color: #f3f4f6; /* Màu nền mặc định */
-        font-size: 150px;
-        font-weight: bold;
-        color: #ffffff; /* Màu chữ */
-
-        .avatar-initials {
-          background-color: #3b82f6; /* Màu nền cho chữ cái */
+        align-items: center;
+        background-color: white;
+        padding: 40px 20px;
+        // border-bottom: 1px solid #000;
+        .avatar {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 150px;
           height: 150px;
-        }
-        i.fa-user {
+          border-radius: 50%;
+          background-color: #f3f4f6; /* Màu nền mặc định */
           font-size: 150px;
-          color: #9ca3af; /* Màu xám cho icon */
+          font-weight: bold;
+          color: #ffffff; /* Màu chữ */
+
+          .avatar-initials {
+            background-color: #3b82f6; /* Màu nền cho chữ cái */
+            width: 150px;
+            height: 150px;
+          }
+          i.fa-user {
+            font-size: 150px;
+            color: #9ca3af; /* Màu xám cho icon */
+          }
+        }
+        .name {
+          font-size: 24px;
+          font-weight: bold;
+          margin-top: 20px;
+        }
+        .email {
+        }
+        .edit {
         }
       }
-      .name {
-        font-size: 24px;
-        font-weight: bold;
+      .user_update {
         margin-top: 20px;
+        background-color: white;
+        padding: 20px;
+        .decription {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px 0;
+          h4 {
+            font-weight: bold;
+          }
+          p {
+          }
+        }
+        .language {
+          display: flex;
+          justify-content: space-between;
+          border-top: 1px solid #e4e5e7;
+          padding: 20px 0;
+          h4 {
+            font-weight: bold;
+          }
+          p {
+          }
+        }
+        .linked {
+          border-top: 1px solid #e4e5e7;
+          padding: 20px 0;
+
+          h4 {
+            font-weight: bold;
+          }
+          ul {
+            li {
+              a {
+              }
+            }
+          }
+        }
+        .skill {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px 0;
+          border-top: 1px solid #e4e5e7;
+          h4 {
+            font-weight: bold;
+          }
+          p {
+          }
+        }
+        .education {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px 0;
+          border-top: 1px solid #e4e5e7;
+          h4 {
+            font-weight: bold;
+          }
+          p {
+          }
+        }
+        .certification {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px 0;
+          border-top: 1px solid #e4e5e7;
+          h4 {
+            font-weight: bold;
+          }
+          p {
+          }
+        }
       }
     }
     .info_right {

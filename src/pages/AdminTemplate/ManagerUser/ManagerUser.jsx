@@ -32,6 +32,7 @@ const ManagerUser = () => {
         console.log(err);
       });
   };
+
   const columns = [
     {
       title: "ID",
