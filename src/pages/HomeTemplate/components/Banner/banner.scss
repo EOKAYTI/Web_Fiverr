@@ -8,6 +8,15 @@
     background-position: center;
     height: 600px;
 
+    @media screen and (max-width: 1024px) {
+      height: 350px;
+    }
+    @media screen and (max-width: 768px) {
+      height: 300px;
+    }
+    @media screen and (max-width: 576px) {
+      height: 250px;
+    }
     position: relative;
     .banner_content {
       position: absolute;
@@ -20,6 +29,13 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+
+      @media screen and (max-width: 1024px) {
+      }
+      @media screen and (max-width: 768px) {
+      }
+      @media screen and (max-width: 576px) {
+      }
       h1 {
         font-size: 60px;
         letter-spacing: -0.02em;
@@ -29,6 +45,17 @@
         span {
           font-family: "DomaineDisplay", "Helvetica Neue", Helvetica, Arial,
             sans-serif;
+        }
+
+        @media screen and (max-width: 1024px) {
+          font-size: 30px;
+          margin-top: 100px;
+        }
+        @media screen and (max-width: 768px) {
+          padding-top: 100px;
+          font-size: 20px;
+        }
+        @media screen and (max-width: 576px) {
         }
       }
       .banner_search {
@@ -82,5 +109,28 @@
         }
       }
     }
+  }
+}
+
+.banner {
+  .input_search {
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 100px;
+      width: 400px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 120px;
+    }
+    @media screen and (max-width: 576px) {
+    }
+  }
+}
+.banner_logo {
+  @media screen and (max-width: 1024px) {
+  }
+  @media screen and (max-width: 768px) {
+    display: none !important;
+  }
+  @media screen and (max-width: 576px) {
   }
 }

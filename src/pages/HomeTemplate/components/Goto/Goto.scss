@@ -6,7 +6,19 @@
       margin-bottom: 32px;
     }
     .goto_group {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      flex-wrap: wrap;
+      @media screen and (max-width: 1024px) {
+        justify-content: space-around;
+      }
+      @media screen and (max-width: 768px) {
+      }
+      @media screen and (max-width: 576px) {
+      }
       .goto_item {
+        width: 280px;
         padding: 20px 16px 16px 16px;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         border-radius: 12px;

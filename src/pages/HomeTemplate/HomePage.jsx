@@ -21,7 +21,7 @@ const HomePage = () => {
       <Goto />
       <Make />
       <Logo />
-      <MadeOn />
+      {/* <MadeOn /> */}
       <Guides />
     </div>
   );

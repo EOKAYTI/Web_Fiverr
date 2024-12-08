@@ -7,7 +7,7 @@ const Goto = () => {
       <div className="container">
         <div className="goto_content">
           <h3>Vontélle’s go-to services</h3>
-          <div className="goto_group grid grid-cols-5 gap-8">
+          <div className="goto_group ">
             <div className="goto_item">
               <img
                 className=" ls-is-cached lazyloaded"

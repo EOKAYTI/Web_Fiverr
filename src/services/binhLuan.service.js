@@ -7,4 +7,7 @@ export const binhLuanService = {
   getDanhSachBinhLuan: () => {
     return http.get("/binh-luan");
   },
+  themBinhLuan: () => {
+    return http.get("/");
+  },
 };

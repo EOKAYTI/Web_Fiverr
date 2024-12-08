@@ -88,6 +88,7 @@ const ManagerJob = () => {
       },
     },
   ];
+
   return (
     <div>
       <h1 className="font-bold text-3xl">Danh sách công việc</h1>
@@ -102,22 +103,6 @@ const ManagerJob = () => {
         Thêm công việc
       </Button>
       <Table dataSource={listJob} columns={columns} />
-      {/* <Table dataSource={listNguoiDung} columns={columns} />
-      <Modal
-        onCancel={() => {
-          setIsModalOpen(false);
-        }}
-        footer={null}
-        title="Thêm người dùng"
-        open={isModalOpen}
-      >
-        <FormAddUser
-          handleCloseModal={() => {
-            setIsModalOpen(false);
-          }}
-          layDanhSachNguoiDung={layDanhSachNguoiDung}
-        />
-      </Modal> */}
     </div>
   );
 };

@@ -3,6 +3,22 @@
   .item_group {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    // @media screen and (max-width: 1024px) {
+    //   display: flex;
+    //   justify-content: space-evenly;
+    // }
+    // @media screen and (max-width: 768px) {
+    //   display: flex;
+    //   justify-content: space-evenly;
+    // }
+    // @media screen and (max-width: 576px) {
+    //   display: flex;
+    //   justify-content: space-evenly;
+    // }
+
     .item_wrapper {
       width: 130px;
 

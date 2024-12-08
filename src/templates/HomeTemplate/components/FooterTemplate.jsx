@@ -4,7 +4,7 @@ const FooterTemplate = () => {
   return (
     <footer className="pt-16 pb-6">
       <div className="container">
-        <div className="footer_top grid grid-cols-5">
+        <div className="footer_top">
           <div className="footer_item">
             <h6>Categorles</h6>
             <ul>

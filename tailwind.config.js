@@ -6,16 +6,16 @@ export default {
     container: {
       center: true,
     },
-    screens: {
-      tablet: "640px",
-      // => @media (min-width: 640px) { ... }
+    // screens: {
+    //   phone: "640px",
+    //   // => @media (min-width: 640px) { ... }
 
-      laptop: "1024px",
-      // => @media (min-width: 1024px) { ... }
+    //   ipad: "1024px",
+    //   // => @media (min-width: 1024px) { ... }
 
-      desktop: "1280px",
-      // => @media (min-width: 1280px) { ... }
-    },
+    //   pc: "1280px",
+    //   // => @media (min-width: 1280px) { ... }
+    // },
   },
   plugins: [],
 };

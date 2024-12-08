@@ -16,7 +16,7 @@ const TryNow = () => {
             </g>
           </svg>
           <div className="content_both">
-            <div className="content_left w-1/2">
+            <div className="content_left">
               <h2>
                 The <span>premium</span> freelance solution for businesses
               </h2>
@@ -108,7 +108,7 @@ const TryNow = () => {
                 Try now
               </button>
             </div>
-            <div className="content_right w-1/2">
+            <div className="content_right">
               <img className="w-full" src="./try_now.webp" alt="" />
             </div>
           </div>

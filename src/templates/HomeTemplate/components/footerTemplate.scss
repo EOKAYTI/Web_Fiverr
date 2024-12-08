@@ -2,7 +2,12 @@ footer {
   margin-top: 80px;
   border-top: 1px solid #e4e5e7;
   .footer_top {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
     .footer_item {
+      width: 250px;
       h6 {
         color: #404145;
         font-weight: bold;
@@ -30,6 +35,8 @@ footer {
   .footer_bottom {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
     border-top: 1px solid #e4e5e7;
     margin-top: 30px;
@@ -45,6 +52,8 @@ footer {
     }
     .footer_bottom_right {
       display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
       align-items: center;
       ul {
         display: flex;

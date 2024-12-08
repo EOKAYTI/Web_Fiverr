@@ -87,7 +87,7 @@ const Banner = () => {
                     },
                   }}
                 >
-                  <div className="w-full">
+                  <div className="input_search w-full">
                     <InputSearch
                       handleSearch={handleSearch}
                       handleClick={handleClickInputSearch}

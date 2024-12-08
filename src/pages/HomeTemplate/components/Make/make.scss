@@ -8,9 +8,19 @@
     }
     .make_group {
       display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
 
       margin-bottom: 64px;
+      @media screen and (max-width: 1024px) {
+        justify-content: space-around;
+      }
+      @media screen and (max-width: 768px) {
+      }
+      @media screen and (max-width: 576px) {
+      }
       .make_item {
+        width: 250px;
         margin-right: 100px;
         display: flex;
         flex-direction: column;

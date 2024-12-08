@@ -7,7 +7,7 @@ import {
   ButtonGhost,
   ButtonOutline,
 } from "../../../components/button/ButtonCustom";
-import { GlobalOutlined } from "@ant-design/icons";
+import { GlobalOutlined, MenuOutlined } from "@ant-design/icons";
 import InputSearch from "../../../components/input/inputSearch/InputSearch";
 import { useSelector } from "react-redux";
 import { congViecService } from "../../../services/congViec.service";
@@ -25,6 +25,8 @@ const HeaderTemplate = () => {
   const [listSearch, setListSearch] = useState([]);
   const { user } = useSelector((state) => state.userSlice);
   const navigate = useNavigate();
+
+  const [openMenu, setOpenMenu] = useState(false);
 
   const handleChangeKeyword = (event) => {
     setKeyword(event.target.value);
@@ -87,24 +89,35 @@ const HeaderTemplate = () => {
     });
   }, [listSearch]);
 
-  return width > 576 ? (
+  return (
     <header className="py-4 border-b border-b-gray-200">
       <div className="container">
-        <div className="header_content flex items-center justify-between">
-          {/* logo  */}
-          <div className="flex flex-1 space-x-2 items-center">
+        <div className="header_content flex items-center justify-between w-full">
+          {/* Nút hamburger (chỉ hiển thị trên màn hình nhỏ) */}
+          {width <= 1024 && (
+            <button
+              className="hamburger-menu p-4 text-gray-700"
+              onClick={() => setOpenMenu(!openMenu)}
+            >
+              {/* Hamburger Icon */}
+              <i className="fa fa-bars"></i>
+            </button>
+          )}
+
+          {/* Logo */}
+          <div className="flex flex-1 space-x-2 items-center justify-center">
             <Link to={pathDefault.homePage}>
               <Icons.logo />
             </Link>
-            {width > 576 && (
+
+            {/* Input tìm kiếm chỉ hiển thị trên màn hình lớn */}
+            {width > 1024 && (
               <Dropdown
                 overlayClassName="dropdown-suggest"
                 open={openDropdown}
                 menu={{
                   items: itemListSearch,
-                  onMouseLeave: () => {
-                    setOpenDropdown(false);
-                  },
+                  onMouseLeave: () => setOpenDropdown(false),
                 }}
               >
                 <div className="w-full">
@@ -119,55 +132,106 @@ const HeaderTemplate = () => {
               </Dropdown>
             )}
           </div>
-          {/* search input  */}
-          <div className="header_action space-x-1">
-            <DropdownHeader buttonContent="Fiverr Pro" />
-            <DropdownHeader buttonContent="Explore" />
-            <ButtonGhost content={"English"} icon={<GlobalOutlined />} />
-            <ButtonGhost content={"Become a Seller"} />
+
+          {/* Phần bên phải (nút "Join", "Sign In" hoặc avatar người dùng) */}
+          <div className="flex items-center space-x-2">
+            {/* Hiển thị các DropdownHeader ở trên màn hình lớn */}
+            {width > 1024 && (
+              <>
+                <DropdownHeader buttonContent="Fiverr Pro" />
+                <DropdownHeader buttonContent="Explore" />
+                <ButtonGhost content={"English"} icon={<GlobalOutlined />} />
+                <ButtonGhost content={"Become a Seller"} />
+              </>
+            )}
+            {/* Chỉ hiển thị nút "Join" và "Sign In" khi người dùng chưa đăng nhập */}
             {!user ? (
               <>
                 <ButtonGhost
-                  onClick={() => {
-                    console.log("đã click sign up");
-                    navigate(pathDefault.signUp);
-                  }}
+                  onClick={() => navigate(pathDefault.signUp)}
                   content={"Join"}
                 />
                 <ButtonOutline
-                  onClick={() => {
-                    console.log("đã click sign in");
-                    navigate(pathDefault.signIn);
-                  }}
+                  onClick={() => navigate(pathDefault.signIn)}
                   content={"Sign In"}
                 />
               </>
             ) : (
               <a
                 className="info_logo"
-                // className="info_logo w-max inline-block"
-                onClick={() => {
-                  navigate(`/info/${user.id}`);
-                }}
+                onClick={() => navigate(`/info/${user.id}`)}
               >
-                {/* {user.name} */}
+                {/* Hiển thị avatar hoặc icon nếu người dùng đã đăng nhập */}
                 {user.name ? (
                   <div className="avatar-initials bg-blue-500 text-white rounded-full flex items-center justify-center text-base font-bold">
-                    {user.name.charAt(0).toUpperCase()}{" "}
-                    {/* Lấy chữ cái đầu và in hoa */}
+                    {user.name.charAt(0).toUpperCase()}
                   </div>
                 ) : (
                   <i className="fa-regular fa-user text-gray-400 text-9xl"></i>
                 )}
               </a>
             )}
-            {/* <Link to={pathDefault.admin}>go to admin</Link> */}
           </div>
         </div>
       </div>
+
+      {/* Menu ẩn/hiện cho màn hình nhỏ (<1024px) */}
+      <div
+        className={`mobile-menu fixed top-0 left-0 w-64 bg-white h-full z-50 transition-transform ${
+          openMenu ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <button
+          className="close-menu p-4 text-red-500"
+          onClick={() => setOpenMenu(false)}
+        >
+          Đóng
+        </button>
+        <nav className="p-4 space-y-4">
+          {/* Input tìm kiếm trong menu */}
+          <div>
+            <InputSearch
+              handleSearch={handleSearch}
+              handleClick={handleClickInputSearch}
+              handleChange={handleChangeKeyword}
+              value={keyword}
+              placeholder={"What service are you looking for today?"}
+            />
+          </div>
+
+          {/* Các mục trong menu */}
+          <DropdownHeader buttonContent="Fiverr Pro" />
+          <DropdownHeader buttonContent="Explore" />
+          <ButtonGhost content={"English"} icon={<GlobalOutlined />} />
+          <ButtonGhost content={"Become a Seller"} />
+          {!user ? (
+            <>
+              <ButtonGhost
+                onClick={() => navigate(pathDefault.signUp)}
+                content={"Join"}
+              />
+              <ButtonOutline
+                onClick={() => navigate(pathDefault.signIn)}
+                content={"Sign In"}
+              />
+            </>
+          ) : (
+            <a
+              className="info_logo"
+              onClick={() => navigate(`/info/${user.id}`)}
+            >
+              {user.name ? (
+                <div className="avatar-initials bg-blue-500 text-white rounded-full flex items-center justify-center text-base font-bold">
+                  {user.name.charAt(0).toUpperCase()}
+                </div>
+              ) : (
+                <i className="fa-regular fa-user text-gray-400 text-9xl"></i>
+              )}
+            </a>
+          )}
+        </nav>
+      </div>
     </header>
-  ) : (
-    <div>Tôi nhỏ hơn 576px</div>
   );
 };
 
