@@ -163,10 +163,12 @@ const DetailPage = () => {
 
   return (
     <div>
-      <Nav />
+      <div className="hidden lg:block md:block sm:hidden">
+        <Nav />
+      </div>
       <section className="detail">
         <div className="container">
-          <div className="detail_group flex justify-between">
+          <div className="detail_group flex justify-between flex-wrap">
             <div className="detail_left w-6/12">
               {itemDetailJob} {itemListComment}
             </div>

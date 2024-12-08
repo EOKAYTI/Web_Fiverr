@@ -1,8 +1,17 @@
 .guides {
   padding: 40px 0;
+  @media screen and (max-width: 1024px) {
+  }
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 576px) {
+    padding: 0 24px;
+  }
   .guides_title {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 20px;
     h3 {

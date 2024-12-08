@@ -1,4 +1,11 @@
 .make {
+  @media screen and (max-width: 1024px) {
+  }
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 576px) {
+    padding: 0 24px;
+  }
   .make_content {
     padding: 40px 0;
     h3 {
@@ -26,6 +33,16 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+        @media screen and (max-width: 1024px) {
+        }
+        @media screen and (max-width: 768px) {
+        }
+        @media screen and (max-width: 576px) {
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+        }
         img {
           margin-bottom: 20px;
         }

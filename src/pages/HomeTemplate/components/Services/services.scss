@@ -1,5 +1,12 @@
 .services {
   padding: 40px 0;
+  @media screen and (max-width: 1024px) {
+  }
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 576px) {
+    padding: 0 24px;
+  }
   .container {
     h2 {
       color: #404145;
@@ -7,6 +14,12 @@
     .service_group_item {
       padding: 0 6px;
       margin: 12px 4px;
+      @media screen and (max-width: 1024px) {
+      }
+      @media screen and (max-width: 768px) {
+      }
+      @media screen and (max-width: 576px) {
+      }
       .services_item {
         display: flex;
         flex-direction: column;
@@ -16,9 +29,26 @@
           opacity: 0.88;
           cursor: pointer;
         }
+        @media screen and (max-width: 1024px) {
+        }
+        @media screen and (max-width: 768px) {
+        }
+        @media screen and (max-width: 576px) {
+          text-align: center;
+          height: 250px;
+          width: 100%;
+        }
         h3 {
         }
         img {
+          @media screen and (max-width: 1024px) {
+          }
+          @media screen and (max-width: 768px) {
+          }
+          @media screen and (max-width: 576px) {
+            margin: 0 auto;
+            width: 50%;
+          }
         }
       }
     }
@@ -31,4 +61,17 @@
 }
 .customArrow::before {
   color: black;
+}
+
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
+  .customArrow {
+    display: none !important;
+  }
+  .customArrow::before {
+    color: black;
+  }
 }

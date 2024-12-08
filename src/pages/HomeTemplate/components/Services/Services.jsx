@@ -71,6 +71,9 @@ const Services = () => {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: false,
         },
       },
       {
@@ -78,6 +81,9 @@ const Services = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: false,
         },
       },
     ],

@@ -1,6 +1,14 @@
 .banner {
   margin-top: 50px;
   padding: 40px 0;
+  @media screen and (max-width: 1024px) {
+  }
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 576px) {
+    margin-top: 80px;
+    padding: 0 24px;
+  }
   .banner_img {
     background-image: url("/banner.png");
     background-repeat: no-repeat;
@@ -122,6 +130,7 @@
       margin-bottom: 120px;
     }
     @media screen and (max-width: 576px) {
+      width: 200px;
     }
   }
 }
@@ -132,5 +141,15 @@
     display: none !important;
   }
   @media screen and (max-width: 576px) {
+  }
+}
+
+.banner_search {
+  @media screen and (max-width: 1024px) {
+  }
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 576px) {
+    padding-bottom: 280px;
   }
 }

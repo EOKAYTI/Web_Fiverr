@@ -1,4 +1,11 @@
 .try_now {
+  @media screen and (max-width: 1024px) {
+  }
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 576px) {
+    padding: 0 24px;
+  }
   .try_now_content {
     background-color: #e8faf4;
     padding: 56px 80px 32px 80px;

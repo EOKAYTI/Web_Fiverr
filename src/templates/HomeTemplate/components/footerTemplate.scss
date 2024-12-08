@@ -1,6 +1,13 @@
 footer {
   margin-top: 80px;
   border-top: 1px solid #e4e5e7;
+  @media screen and (max-width: 1024px) {
+  }
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 576px) {
+    padding: 0 24px;
+  }
   .footer_top {
     display: flex;
     justify-content: flex-start;
@@ -41,6 +48,16 @@ footer {
     border-top: 1px solid #e4e5e7;
     margin-top: 30px;
     padding-top: 30px;
+    @media screen and (max-width: 1024px) {
+    }
+    @media screen and (max-width: 768px) {
+    }
+    @media screen and (max-width: 576px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     .footer_bottom_left {
       display: flex;
@@ -49,15 +66,47 @@ footer {
         color: #b5b6ba;
         margin-left: 24px;
       }
+      @media screen and (max-width: 1024px) {
+      }
+      @media screen and (max-width: 768px) {
+      }
+      @media screen and (max-width: 576px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+          margin: 0;
+          margin-top: 10px;
+        }
+      }
     }
     .footer_bottom_right {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       align-items: center;
+      @media screen and (max-width: 1024px) {
+      }
+      @media screen and (max-width: 768px) {
+      }
+      @media screen and (max-width: 576px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
       ul {
         display: flex;
         padding-right: 32px;
+        @media screen and (max-width: 1024px) {
+        }
+        @media screen and (max-width: 768px) {
+        }
+        @media screen and (max-width: 576px) {
+          padding: 0;
+        }
+
         li {
           margin-right: 24px;
 

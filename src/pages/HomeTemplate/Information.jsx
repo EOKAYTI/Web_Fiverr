@@ -2,8 +2,8 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import { nguoiDungService } from "../../services/nguoiDung.service";
 
-import "./information.scss";
 import Nav from "./components/Nav/Nav";
+import "./information.scss";
 const Information = () => {
   const { id } = useParams(); // Lấy id từ URL
   const [info, setInfo] = useState([]);
@@ -24,7 +24,9 @@ const Information = () => {
 
   return (
     <div>
-      <Nav />
+      <div className="hidden lg:block md:block sm:hidden">
+        <Nav />
+      </div>
       <div className="info bg-[#F5F5F5]">
         <div className="container">
           <div className="info_content">

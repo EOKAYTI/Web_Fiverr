@@ -74,10 +74,15 @@ const SearchPage = () => {
 
   return (
     <div>
-      <Nav />
-      <Results result={query} number={count} />
+      <div className="hidden lg:block md:block sm:hidden">
+        <Nav />
+      </div>
+
+      <div className="hidden lg:block md:block sm:hidden">
+        <Results result={query} number={count} />
+      </div>
       <div className="container">
-        <div className="relate_group grid grid-cols-4 gap-5">
+        <div className="relate_group grid grid-cols-1 sm:grid-cols-2 mt-20 p-5 space-y-5 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {itemListRelate}
         </div>
       </div>

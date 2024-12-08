@@ -1,5 +1,12 @@
 .item {
   margin-bottom: 40px;
+  @media screen and (max-width: 1024px) {
+  }
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 576px) {
+    padding: 0 24px;
+  }
   .item_group {
     display: flex;
     justify-content: space-evenly;
