@@ -13,6 +13,8 @@ import { authService } from "../../services/auth.service";
 import { NotificationContext } from "../../App";
 import { useDispatch } from "react-redux";
 import { handleUpdateUser } from "../../redux/slice/user.slice";
+import "./signIn.scss";
+
 const SignIn = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -66,7 +68,7 @@ const SignIn = () => {
   };
 
   return (
-    <div className="h-screen grid grid-cols-3 py-10">
+    <div className="signIn h-screen">
       <div className="signIn_animation col-span-2 h-full flex items-center">
         {/* animation  */}
         <Lottie options={defaultOptions} height={700} width={700} />

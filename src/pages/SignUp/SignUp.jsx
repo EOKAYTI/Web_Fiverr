@@ -12,6 +12,7 @@ import { authService } from "../../services/auth.service";
 import { NotificationContext } from "../../App";
 import { useDispatch } from "react-redux";
 import * as Yup from "yup";
+import "./signUp.scss";
 
 const SignUp = () => {
   const dispath = useDispatch();
@@ -88,12 +89,12 @@ const SignUp = () => {
     },
   };
   return (
-    <div className="h-screen grid grid-cols-3 py-10">
-      <div className="signIn_animation col-span-2 h-full flex items-center">
+    <div className="signUp h-screen grid grid-cols-3 py-10">
+      <div className="signUp_animation col-span-2 h-full flex items-center">
         {/* animation  */}
         <Lottie options={defaultOptions} height={700} width={700} />
       </div>
-      <div className="signIn_form h-full px-10 flex flex-col justify-between">
+      <div className="signUp_form h-full px-10 flex flex-col justify-between">
         {/* logo and back to homepage  */}
         <div className="flex justify-between items-center">
           <Icons.logo />

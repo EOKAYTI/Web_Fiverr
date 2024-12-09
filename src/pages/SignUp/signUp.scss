@@ -1,0 +1,36 @@
+.signUp {
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 576px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .signUp_animation {
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+  .signUp_form {
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+  }
+}
