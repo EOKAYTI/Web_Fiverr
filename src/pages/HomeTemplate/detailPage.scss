@@ -124,7 +124,11 @@
 .moTa {
   padding: 10px 150px;
   position: sticky;
-  top: 50px;
+  top: 100px;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    padding: 0;
+  }
   .moTa_top {
     border: 1px solid #e4e5e7;
     padding: 20px;
@@ -183,6 +187,24 @@
           color: white;
         }
       }
+    }
+  }
+}
+
+.detail {
+  .detail_group {
+    @media screen and (max-width: 1024px) {
+      display: flex;
+      .detail_left {
+        width: 100%;
+      }
+      .detail_right {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 576px) {
+      margin-top: 100px;
+      padding: 20px;
     }
   }
 }

@@ -82,7 +82,7 @@ const SearchPage = () => {
         <Results result={query} number={count} />
       </div>
       <div className="container">
-        <div className="relate_group grid grid-cols-1 sm:grid-cols-2 mt-20 p-5 space-y-5 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div className="relate_group grid grid-cols-1 p-5 mt-20 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-5">
           {itemListRelate}
         </div>
       </div>

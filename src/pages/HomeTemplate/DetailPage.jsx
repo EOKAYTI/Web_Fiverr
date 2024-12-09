@@ -163,7 +163,7 @@ const DetailPage = () => {
 
   return (
     <div>
-      <div className="hidden lg:block md:block sm:hidden">
+      <div className="hidden lg:block md:hidden sm:hidden">
         <Nav />
       </div>
       <section className="detail">

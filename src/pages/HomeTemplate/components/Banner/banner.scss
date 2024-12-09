@@ -15,7 +15,7 @@
     background-size: contain;
     background-position: center;
     height: 600px;
-
+    position: relative;
     @media screen and (max-width: 1024px) {
       height: 350px;
     }
@@ -25,7 +25,7 @@
     @media screen and (max-width: 576px) {
       height: 250px;
     }
-    position: relative;
+
     .banner_content {
       position: absolute;
       right: 0;
@@ -43,6 +43,8 @@
       @media screen and (max-width: 768px) {
       }
       @media screen and (max-width: 576px) {
+        // display: none;
+        margin-top: 200px;
       }
       h1 {
         font-size: 60px;
@@ -77,6 +79,10 @@
           width: 550px;
           border-radius: 8px;
           position: relative;
+          @media screen and (max-width: 576px) {
+            height: 100px;
+            width: 100px;
+          }
         }
         i {
           position: absolute;
@@ -85,10 +91,6 @@
           border-radius: 8px;
           padding: 16px;
           margin-right: 2px;
-          &:hover {
-            background-color: #19a463;
-            cursor: pointer;
-          }
         }
       }
       .banner_logo {

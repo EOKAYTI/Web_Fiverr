@@ -10,6 +10,13 @@
     background-color: #e8faf4;
     padding: 56px 80px 32px 80px;
     border-radius: 16px;
+    @media screen and (max-width: 576px) {
+      padding: 20px;
+      text-align: center;
+      svg {
+        margin-left: 25%;
+      }
+    }
     .content_both {
       display: flex;
       align-items: center;
@@ -37,8 +44,20 @@
             font-family: "Domine", serif;
             color: #1dbf73;
           }
+          @media screen and (max-width: 576px) {
+            font-size: 40px;
+          }
         }
         .content_left_group {
+          @media screen and (max-width: 576px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            svg {
+              margin-left: 45%;
+            }
+          }
           .content_left_item {
             .item {
               h6 {
@@ -48,6 +67,14 @@
               p {
                 font-size: 14px;
               }
+              @media screen and (max-width: 576px) {
+                padding: 0;
+                margin: 0;
+              }
+            }
+            @media screen and (max-width: 576px) {
+              display: flex;
+              flex-wrap: wrap;
             }
           }
         }

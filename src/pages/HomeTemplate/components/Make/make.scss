@@ -8,10 +8,17 @@
   }
   .make_content {
     padding: 40px 0;
+    @media screen and (max-width: 576px) {
+      text-align: center;
+    }
     h3 {
       font-size: 40px;
       margin-bottom: 64px;
       color: #404145;
+      @media screen and (max-width: 576px) {
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
     }
     .make_group {
       display: flex;
@@ -25,6 +32,7 @@
       @media screen and (max-width: 768px) {
       }
       @media screen and (max-width: 576px) {
+        margin-bottom: 20px;
       }
       .make_item {
         width: 250px;

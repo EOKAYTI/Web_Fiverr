@@ -5,12 +5,16 @@
   @media screen and (max-width: 768px) {
   }
   @media screen and (max-width: 576px) {
+    margin-top: 20px;
     padding: 0 24px;
   }
   .goto_content {
     h3 {
       font-size: 28px;
       margin-bottom: 32px;
+      @media screen and (max-width: 576px) {
+        text-align: center;
+      }
     }
     .goto_group {
       display: flex;

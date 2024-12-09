@@ -13,8 +13,14 @@ footer {
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 50px;
+    @media screen and (max-width: 576px) {
+      text-align: center;
+    }
     .footer_item {
       width: 250px;
+      @media screen and (max-width: 576px) {
+        width: 100%;
+      }
       h6 {
         color: #404145;
         font-weight: bold;
