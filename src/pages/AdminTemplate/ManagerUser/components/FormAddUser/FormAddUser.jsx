@@ -10,6 +10,7 @@ import { NotificationContext } from "../../../../../App";
 const FormAddUser = ({ handleCloseModal, layDanhSachNguoiDung }) => {
   const [listSkill, setListSkill] = useState([]);
   const handleNotification = useContext(NotificationContext);
+
   const {
     handleChange,
     handleBlur,
@@ -47,6 +48,7 @@ const FormAddUser = ({ handleCloseModal, layDanhSachNguoiDung }) => {
         });
     },
   });
+
   useEffect(() => {
     skillService
       .layDanhSachSkill()
@@ -94,7 +96,6 @@ const FormAddUser = ({ handleCloseModal, layDanhSachNguoiDung }) => {
         labelContent={"Password"}
         placeholder={"Vui lòng nhập password"}
       />
-
       <div className="grid grid-cols-2 gap-5">
         <InputCustom
           id="phone"

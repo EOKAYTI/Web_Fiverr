@@ -1,11 +1,16 @@
-import { Button, Table } from "antd";
-import React, { useEffect, useState } from "react";
+import { Button, Modal, Popconfirm, Table } from "antd";
+import React, { useContext, useEffect, useState } from "react";
 import { binhLuanService } from "../../../services/binhLuan.service";
+import FormAddComment from "./components/FormAddComment";
+import { NotificationContext } from "../../../App";
 
 const ManagerComment = () => {
+  const handleNotification = useContext(NotificationContext);
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [listBinhLuan, setListBinhLuan] = useState([]);
+
   const layDanhSachBinhLuan = () => {
     binhLuanService
       .getDanhSachBinhLuan()
@@ -17,10 +22,6 @@ const ManagerComment = () => {
         console.log(err);
       });
   };
-
-  useEffect(() => {
-    layDanhSachBinhLuan();
-  });
 
   const columns = [
     {
@@ -56,25 +57,53 @@ const ManagerComment = () => {
     {
       title: "Đánh giá bình luận",
       dataIndex: "saoBinhLuan",
-      key: "5",
+      key: "6",
       width: 200,
     },
     {
       title: "Hành động",
       key: "7",
       width: 250,
-      render: () => {
+      render: (text, record, index) => {
         return (
-          <div>
-            <Button>Xóa</Button>
-            <Button>Sứa</Button>
+          <div className="space-x-3">
+            <Popconfirm
+              title="Thực hiện xoá bình luận"
+              description="Bạn có chắc muốn xoá bình luận này không?"
+              onConfirm={() => {
+                binhLuanService
+                  .xoaBinhLuan(record.id)
+                  .then((res) => {
+                    layDanhSachBinhLuan();
+                    handleNotification("success", res.data.message);
+                  })
+                  .catch((err) => {
+                    layDanhSachBinhLuan();
+                    handleNotification(
+                      "error",
+                      err.response?.data?.content || "Error deleting comment"
+                    );
+                  });
+              }}
+              onCancel={() => {}}
+              okText="Yes"
+              cancelText="No"
+            >
+              <Button danger>Xoá</Button>
+            </Popconfirm>
+            <Button className="border-yellow-500 text-yellow-500">Sửa</Button>
           </div>
         );
       },
     },
   ];
+
+  useEffect(() => {
+    layDanhSachBinhLuan();
+  }, []);
+
   return (
-    <div>
+    <div className="space-y-3">
       <h1 className="font-bold text-3xl">Danh sách bình luận</h1>
       <Button
         onClick={() => {
@@ -84,9 +113,24 @@ const ManagerComment = () => {
         className="bg-green-600 text-white"
         size="large"
       >
-        Thêm công việc
+        Thêm bình luận
       </Button>
+
       <Table dataSource={listBinhLuan} columns={columns} />
+
+      <Modal
+        onCancel={() => {
+          setIsModalOpen(false);
+        }}
+        footer={null}
+        title="Thêm bình luận"
+        open={isModalOpen}
+      >
+        <FormAddComment
+          handleCloseModal={() => setIsModalOpen(false)}
+          layDanhSachBinhLuan={layDanhSachBinhLuan}
+        />
+      </Modal>
     </div>
   );
 };

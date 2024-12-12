@@ -109,7 +109,7 @@ const DetailPage = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [id]);
 
   const itemListComment = useMemo(() => {
     return listComment.map((item, index) => {
